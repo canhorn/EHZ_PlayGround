@@ -1,3 +1,3 @@
 # EHZ_PlayGround
 
-Admin Edit
+Event Admins need to create PR's
