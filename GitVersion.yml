@@ -1,17 +1,15 @@
-mode: ContinuousDeployment
+mode: ContinuousDelivery
 branches:
-  main:
+  master:
     regex: ^main
-    source-branches: ['main', 'develop', 'feature', 'hotfix', 'support']
     tag: ''
     increment: Patch
     prevent-increment-of-merged-branch-version: true
     track-merge-target: false
     tracks-release-branches: false
-    is-release-branch: false
+    is-release-branch: true
   feature:
     regex: ^features?[/-]
-    source-branches: ['main', 'develop', 'feature', 'hotfix', 'support']
     tag: 'alpha'
     increment: Inherit
     prevent-increment-of-merged-branch-version: false
@@ -20,7 +18,6 @@ branches:
     is-release-branch: false
   pull-request:
     regex: ^(pull|pull\-requests|pr)[/-]
-    source-branches: ['main', 'develop', 'feature', 'hotfix', 'support']
     tag: alpha
     increment: Inherit
     prevent-increment-of-merged-branch-version: false
@@ -30,7 +27,6 @@ branches:
     is-release-branch: false
   hotfix:
     regex: ^hotfix(es)?[/-]
-    source-branches: ['main', 'develop', 'feature', 'hotfix', 'support']
     tag: beta
     increment: Patch
     prevent-increment-of-merged-branch-version: false
@@ -39,7 +35,6 @@ branches:
     is-release-branch: false
   support:
     regex: ^support[/-]
-    source-branches: ['main', 'develop', 'feature', 'hotfix', 'support']
     tag: ''
     increment: Patch
     prevent-increment-of-merged-branch-version: true
@@ -48,7 +43,6 @@ branches:
     is-release-branch: false
   develop:
     regex: ^dev(elop)?(ment)?$
-    source-branches: ['main', 'develop', 'feature', 'hotfix', 'support']
     tag: beta
     increment: Minor
     prevent-increment-of-merged-branch-version: false
