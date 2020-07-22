@@ -17,8 +17,8 @@ jobs:
       id: gitversion # step id used as reference for output values
       uses: gittools/actions/gitversion/execute@v0.9
     - run: |
-       echo "NuGetVersionV2: ${{ steps.gitversion.outputs.nuGetVersionV2 }}"
-       echo "NuGetPreReleaseTagV2: ${{ steps.gitversion.outputs.CommitsSinceVersionSourcePadded }}"
+        echo "NuGetVersionV2: ${{ steps.gitversion.outputs.nuGetVersionV2 }}"
+        echo "NuGetPreReleaseTagV2: ${{ steps.gitversion.outputs.CommitsSinceVersionSourcePadded }}"
     - name: Setup .NET Core
       uses: actions/setup-dotnet@v1
       with:
