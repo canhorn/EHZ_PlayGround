@@ -3,7 +3,7 @@ name: EventHorizon Nuget Packages
 on: [push]
 
 jobs:
-  build:
+  build:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
@@ -12,7 +12,7 @@ jobs:
     - name: Install GitVersion
       uses: gittools/actions/gitversion/setup@v0.9
       with:
-          versionSpec: '5.1.x'
+        versionSpec: '5.1.x'
     - name: Use GitVersion
       id: gitversion # step id used as reference for output values
       uses: gittools/actions/gitversion/execute@v0.9
