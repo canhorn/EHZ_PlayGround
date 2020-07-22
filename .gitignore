@@ -1,0 +1,6 @@
+**/bin
+**/obj
+
+published
+nuget-packages
+Projects/EventHorizon.Package.Test.Tests/coverage.opencover.xml

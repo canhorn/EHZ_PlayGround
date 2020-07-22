@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+
+        <AssemblyTitle>EventHorizon Package Test</AssemblyTitle>
+        <Description>Send emails very easily. Use razor templates, smtp, embedded files, all without hassle. This is a Base Package and includes just the domain model, very basic defaults, and is also included with every other Fluent Email package here.</Description>
+        <AssemblyName>EventHorizon.Package.Test</AssemblyName>
+        <Authors>Cody Merritt Anhorn</Authors>
+        <PackageId>EventHorizon.Package.Test</PackageId>
+        <PackageTags>testing</PackageTags>
+        <PackageProjectUrl>https://github.com/canhorn/EHZ_PlayGround</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/canhorn/EHZ_PlayGround</RepositoryUrl>
+
+        <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    </PropertyGroup>
+
+</Project>
