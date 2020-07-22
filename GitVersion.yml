@@ -1,5 +1,15 @@
 mode: ContinuousDeployment
-branches: {}
+branches:
+  main:
+    regex: ^main
+    source-branches: ['main', 'develop', 'feature', 'hotfix', 'support']
+    tag: ''
+    increment: Patch
+    prevent-increment-of-merged-branch-version: true
+    track-merge-target: false
+    tracks-release-branches: false
+    is-release-branch: true
+    pre-release-weight: 1000
 ignore:
   sha: []
 merge-message-formats: {}
