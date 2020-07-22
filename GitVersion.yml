@@ -28,6 +28,33 @@ branches:
     track-merge-target: false
     tracks-release-branches: false
     is-release-branch: false
+  hotfix:
+    regex: ^hotfix(es)?[/-]
+    source-branches: ['main', 'develop', 'feature', 'hotfix', 'support']
+    tag: beta
+    increment: Patch
+    prevent-increment-of-merged-branch-version: false
+    track-merge-target: false
+    tracks-release-branches: false
+    is-release-branch: false
+  support:
+    regex: ^support[/-]
+    source-branches: ['main', 'develop', 'feature', 'hotfix', 'support']
+    tag: ''
+    increment: Patch
+    prevent-increment-of-merged-branch-version: true
+    track-merge-target: false
+    tracks-release-branches: false
+    is-release-branch: false
+  develop:
+    regex: ^dev(elop)?(ment)?$
+    source-branches: ['main', 'develop', 'feature', 'hotfix', 'support']
+    tag: beta
+    increment: Minor
+    prevent-increment-of-merged-branch-version: false
+    track-merge-target: true
+    tracks-release-branches: true
+    is-release-branch: false
 ignore:
   sha: []
 merge-message-formats: {}
