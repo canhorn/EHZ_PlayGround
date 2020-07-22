@@ -20,8 +20,8 @@ jobs:
         echo "NuGetVersionV2: ${{ steps.gitversion.outputs.nuGetVersionV2 }}"
         echo "NuGetPreReleaseTagV2: ${{ steps.gitversion.outputs.CommitsSinceVersionSourcePadded }}"
     - name: Setup .NET Core
-      uses: actions/setup-dotnet@v1
-      with:
+      uses: actions/setup-dotnet@v1
+      with:
         dotnet-version: '5.0.100-preview.7.20366.6'
     - name: Build with dotnet
       run: dotnet build --configuration Release ./Projects/EventHorizon.Package.Test/EventHorizon.Package.Test.csproj
