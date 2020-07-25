@@ -23,6 +23,7 @@ jobs:
       uses: gittools/actions/gitversion/execute@v0.9.4
       with:
         updateAssemblyInfo: true
+        updateAssemblyInfoFilename: ./Projects/EventHorizon.Package.Test/Properties/AssemblyInfo.cs
     - run: |
         echo "NuGetVersionV2: ${{ steps.gitversion.outputs.NuGetVersionV2 }}"
     - name: Setup .NET Core
