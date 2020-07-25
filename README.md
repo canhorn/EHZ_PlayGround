@@ -1,3 +1,3 @@
-# EHZ_PlayGround 0.2.0 Released
+# EHZ_PlayGround 0.6.0 Released
 
 Event Admins need to create PR's
